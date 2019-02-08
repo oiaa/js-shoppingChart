@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul {
+  margin-bottom: 0 !important;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  background: #363c41;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.header .header-left {
+  width: 55%;
+  height: 60px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-left: 30px;
+  border: 0px solid red;
+}
+.header .header-left img {
+  cursor: pointer;
+}
+.header .header-left ul {
+  display: inline-block;
+  margin-left: 25px;
+}
+.header .header-left ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.header .header-left ul li {
+  float: left;
+  color: white;
+  padding: 0 25px;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+}
+.header .header-left ul li:hover {
+  background: gray;
+}
+.header .header-left ul .career {
+  background-image: url('../img/icon-new.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.header .header-right {
+  width: 35%;
+  height: 60px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  align-items: center;
+  margin-right: 30px;
+  border: 0px solid red;
+}
+.header .header-right .head-photo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header-right .head-photo:hover {
+  background: gray;
+}
+.header .header-right .head-photo img {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.header .header-right .icon {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.header .header-right .icon:hover {
+  background: gray;
+}
+.header .header-right .icon i {
+  color: white;
+}
+.header .header-right input {
+  border: none;
+  width: 270px;
+  height: 40px;
+  background: transparent;
+  border-bottom: 2px solid gray;
+  color: white;
+}
+.header .header-right input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid gray;
+}
+.header .header-right .search {
+  color: gray;
+  position: relative;
+  right: 20px;
+  cursor: pointer;
+}
+.banner {
+  width: 100%;
+  height: 160px;
+  background-image: url(../img/cart-header-bg.jpg);
+}
+.account {
+  width: 100%;
+  height: 600px;
+}
+.account .wrapper {
+  width: 85%;
+  height: 620px;
+  margin: 0 auto;
+  position: relative;
+  top: -60px;
+}
+.account .wrapper .shopping-cart {
+  width: 100%;
+  height: 550px;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 0 10px #dbdbdb;
+}
+.account .wrapper .shopping-cart .container {
+  width: 100%;
+  padding: 0;
+}
+.account .wrapper .shopping-cart .container .row {
+  margin: 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+.account .wrapper .shopping-cart .container .r1 {
+  width: 100%;
+  height: 60px;
+  background: #ebebeb;
+}
+.account .wrapper .shopping-cart .container .r1 .item {
+  height: 60px;
+  line-height: 60px;
+}
+.account .wrapper .shopping-cart .container .r2,
+.account .wrapper .shopping-cart .container .r3,
+.account .wrapper .shopping-cart .container .r4,
+.account .wrapper .shopping-cart .container .r5 {
+  width: 100%;
+  height: 120px;
+}
+.account .wrapper .shopping-cart .container .r2 .item,
+.account .wrapper .shopping-cart .container .r3 .item,
+.account .wrapper .shopping-cart .container .r4 .item,
+.account .wrapper .shopping-cart .container .r5 .item {
+  height: 120px;
+  line-height: 120px;
+  overflow: hidden;
+}
+.account .wrapper .shopping-cart .container .r2 .item .inputgroup span,
+.account .wrapper .shopping-cart .container .r3 .item .inputgroup span,
+.account .wrapper .shopping-cart .container .r4 .item .inputgroup span,
+.account .wrapper .shopping-cart .container .r5 .item .inputgroup span {
+  height: 34px;
+  border-radius: 0;
+}
+.account .wrapper .shopping-cart .container .r2 .item .inputgroup input,
+.account .wrapper .shopping-cart .container .r3 .item .inputgroup input,
+.account .wrapper .shopping-cart .container .r4 .item .inputgroup input,
+.account .wrapper .shopping-cart .container .r5 .item .inputgroup input {
+  width: 80px;
+  height: 34px;
+  border: 1px solid #ccc;
+}
+.account .wrapper .shopping-cart .container .r2 .item .delete,
+.account .wrapper .shopping-cart .container .r3 .item .delete,
+.account .wrapper .shopping-cart .container .r4 .item .delete,
+.account .wrapper .shopping-cart .container .r5 .item .delete {
+  cursor: pointer;
+}
+.account .wrapper .payment {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.account .wrapper .payment .paybtn {
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.account .wrapper .payment .amount-payable {
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+.account .wrapper .payment .info {
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+footer {
+  width: 100%;
+  height: 90px;
+  background: #363c41;
+}
+footer .wrapper {
+  border: 0px solid red;
+  box-sizing: border-box;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .wrapper .wrapper-left {
+  box-sizing: border-box;
+  border: 0px solid red;
+  width: 80%;
+}
+footer .wrapper .wrapper-left .link {
+  border: 0px solid red;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+footer .wrapper .wrapper-left .link a {
+  color: #959aa0;
+  text-decoration: none;
+  margin-right: 25px;
+}
+footer .wrapper .wrapper-left .link a:hover {
+  color: #fff;
+}
+footer .wrapper .wrapper-left p {
+  margin-top: 5px;
+  color: gray;
+  cursor: pointer;
+}
+footer .wrapper .wrapper-right {
+  box-sizing: border-box;
+  border: 0px solid red;
+  width: 20%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+footer .wrapper .wrapper-right i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  background: gray;
+  cursor: pointer;
+  margin-left: 10px;
+}

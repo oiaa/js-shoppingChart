@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js实现购物车结算页面</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="header">
+        <div class="header-left">
+            <img src="./img/logo.png">
+            <ul>
+                <li>壹壹</li>
+                <li class="career">贰贰贰贰</li>
+                <li>叁叁</li>
+                <li>肆肆</li>
+                <li>伍</li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <div class="head-photo">
+                <img src="./img/ava.jpg">
+            </div>
+            <div class="icon bell"><i class="fa fa-bell"></i></div>
+            <div class="icon lock"><i class="fa fa-lock"></i></div>
+            <i class="search fa fa-search"></i>
+            <input type="text" placeholder="壹壹壹壹">
+        </div>
+    </nav>
+    <section class="banner"></section>
+    <section class="account">
+        <div class="wrapper">
+            <div class="shopping-cart">
+                <div class="container">
+                    <div class="row r1">
+                        <div class="item col-xs-1">
+                            <input type="checkbox" checked="1" id="checkbox">全选
+                        </div>
+                        <div class="item col-xs-4">商品名称</div>
+                        <div class="item col-xs-1">总价</div>
+                        <div class="item col-xs-1">单价</div>
+                        <div class="item col-xs-4">数量</div>
+                        <div class="item col-xs-1">操作</div>
+                    </div>
+                    <div class="row r2">
+                        <div class="item col-xs-1">
+                            <input type="checkbox" checked="1" id="checkbox">
+                        </div>
+                        <div class="item col-xs-4">
+                            <img src="./img/g1.jpg"> 
+                            <span>商品商品商品</span>
+                        </div>
+                        <div class="item col-xs-1">
+                            <span class="total-price">￥ 10</span>
+                        </div>
+                        <div class="item col-xs-1">
+                            <span class="unit-price">￥ 10</span>
+                        </div>
+                        <div class="item col-xs-4">
+                            <div class="inputgroup">
+                                <span class="btn btn-default" id="sub-btn">-</span>
+                                <input type="text" value=1 id="quantity-display-box">
+                                <span class="btn btn-default" id="add-btn">+</span>
+                            </div>
+                        </div>
+                        <div class="item col-xs-1">
+                            <span class="delete btn btn-danger">删除</span>
+                        </div>
+                    </div>
+                    <div class="row r3">
+                        <div class="item col-xs-1">
+                            <input type="checkbox" checked="1" id="checkbox">
+                        </div>
+                        <div class="item col-xs-4">
+                            <img src="./img/g1.jpg">
+                            <span>商品商品商品</span>
+                        </div>
+                        <div class="item col-xs-1">
+                            <span class="total-price">￥ 10</span>
+                        </div>
+                        <div class="item col-xs-1">
+                            <span class="unit-price">￥ 10</span>
+                        </div>
+                        <div class="item col-xs-4">
+                            <div class="inputgroup">
+                                <span class="btn btn-default" id="sub-btn">-</span>
+                                <input type="text" value=1 id="quantity-display-box">
+                                <span class="btn btn-default" id="add-btn">+</span>
+                            </div>
+                        </div>
+                        <div class="item col-xs-1">
+                            <span class="delete btn btn-danger">删除</span>
+                        </div>
+                    </div>
+                    <div class="row r4">
+                        <div class="item col-xs-1">
+                            <input type="checkbox" checked="1" id="checkbox">
+                        </div>
+                        <div class="item col-xs-4">
+                            <img src="./img/g1.jpg">
+                            <span>商品商品商品</span>
+                        </div>
+                        <div class="item col-xs-1">
+                            <span class="total-price">￥ 10</span>
+                        </div>
+                        <div class="item col-xs-1">
+                            <span class="unit-price">￥ 10</span>
+                        </div>
+                        <div class="item col-xs-4">
+                            <div class="inputgroup">
+                                <span class="btn btn-default" id="sub-btn">-</span>
+                                <input type="text" value=1 id="quantity-display-box">
+                                <span class="btn btn-default" id="add-btn">+</span>
+                            </div>
+                        </div>
+                        <div class="item col-xs-1">
+                            <span class="delete btn btn-danger">删除</span>
+                        </div>
+                    </div>
+                    <div class="row r5">
+                        <div class="item col-xs-1">
+                            <input type="checkbox" checked="1" id="checkbox">
+                        </div>
+                        <div class="item col-xs-4">
+                            <img src="./img/g1.jpg">
+                            <span>商品商品商品</span>
+                        </div>
+                        <div class="item col-xs-1">
+                            <span class="total-price">￥ 10</span>
+                        </div>
+                        <div class="item col-xs-1">
+                            <span class="unit-price">￥ 10</span>
+                        </div>
+                        <div class="item col-xs-4">
+                            <div class="inputgroup">
+                                <span class="btn btn-default" id="sub-btn">-</span>
+                                <input type="text" value=1 id="quantity-display-box">
+                                <span class="btn btn-default" id="add-btn">+</span>
+                            </div>
+                        </div>
+                        <div class="item col-xs-1">
+                            <span class="delete btn btn-danger">删除</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment">
+                <span class="paybtn btn-danger">去结算</span>
+                <span class="amount-payable">￥ 40</span>
+                <span class="info">应付金额：</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="wrapper-left">
+                <div class="link">
+                    <a href="#">友情链接</a>
+                    <a href="#">友情链接</a>
+                    <a href="#">友情链接</a>
+                    <a href="#">友情链接</a>
+                    <a href="#">友情链接</a>
+                    <a href="#">友情链接</a>
+                    <a href="#">友情链接</a>
+                    <a href="#">友情链接</a>
+                    <a href="#">友情链接</a>
+                </div>
+                <p>Copyright 2333 @ iiii ii iii iiiii iiiiii | iiii | iiiiiiii</p>
+            </div>
+            <div class="wrapper-right">
+                <i class="fa fa-qq"></i>
+                <i class="fa fa-weibo"></i>
+                <i class="fa fa-weixin"></i>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script src="./js/index.js"></script>
+</html>
